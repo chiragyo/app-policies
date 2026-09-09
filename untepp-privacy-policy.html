@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — UNTEPP</title>
+<style>
+  :root {
+    --bg: #fbfaf8; --surface: #ffffff; --ink: #1b1a18; --muted: #5f5c57;
+    --rule: #e4e1db; --accent: #2f6f5e; --accent-soft: #eef4f1;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16181a; --surface: #1e2124; --ink: #ecebe8; --muted: #a3a09a;
+      --rule: #2e3235; --accent: #7fc4ac; --accent-soft: #1d2724;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 46rem; margin: 0 auto; padding: 3rem 1.25rem 5rem; }
+  header { border-bottom: 1px solid var(--rule); padding-bottom: 1.5rem; margin-bottom: 2rem; }
+  .brand { font-weight: 700; letter-spacing: .14em; text-transform: uppercase; font-size: .8rem; color: var(--accent); }
+  h1 { font-size: clamp(1.7rem, 4.5vw, 2.3rem); line-height: 1.2; margin: .6rem 0 .5rem; }
+  h2 { font-size: 1.15rem; margin: 2.4rem 0 .6rem; padding-top: 1.2rem; border-top: 1px solid var(--rule); }
+  h3 { font-size: 1rem; margin: 1.5rem 0 .4rem; }
+  .dates { color: var(--muted); font-size: .9rem; margin: 0; }
+  .lede { font-size: 1.05rem; color: var(--muted); }
+  ul, ol { padding-left: 1.3rem; }
+  li { margin: .4rem 0; }
+  a { color: var(--accent); }
+  code { background: var(--accent-soft); padding: .1em .35em; border-radius: 4px; font-size: .9em; }
+  .callout {
+    background: var(--accent-soft); border-left: 3px solid var(--accent);
+    padding: 1rem 1.1rem; border-radius: 0 8px 8px 0; margin: 1.5rem 0;
+  }
+  .callout p:first-child { margin-top: 0; } .callout p:last-child { margin-bottom: 0; }
+  table { width: 100%; border-collapse: collapse; margin: 1.2rem 0; font-size: .94rem; display: block; overflow-x: auto; }
+  th, td { text-align: left; padding: .65rem .7rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { font-weight: 600; white-space: nowrap; }
+  footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: .88rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="brand">UNTEPP</div>
+  <h1>Privacy Policy</h1>
+  <p class="dates">Effective <strong>REPLACE_EFFECTIVE_DATE</strong> · Last updated <strong>REPLACE_EFFECTIVE_DATE</strong></p>
+</header>
+
+<p class="lede">UNTEPP is a digital wellbeing app for Android. It measures how you
+use your phone so you can decide to use it differently. The record of what you
+actually do on your device stays on your device.</p>
+
+<div class="callout">
+  <p><strong>The short version.</strong> UNTEPP has no accounts and no server of
+  its own. Your usage history — which apps you open and for how long — is stored
+  only in the app's local database on your phone and is never uploaded to us or
+  to anyone else. What does leave the device is limited to anonymous product
+  analytics, crash reports, and your subscription status.</p>
+</div>
+
+<h2>1. Who we are</h2>
+<p>UNTEPP ("the app", "we", "us") is published by
+<strong>REPLACE_PUBLISHER_NAME</strong>, <strong>REPLACE_PUBLISHER_ADDRESS</strong>.
+For any privacy question or request, contact
+<a href="mailto:REPLACE_CONTACT_EMAIL">REPLACE_CONTACT_EMAIL</a>.</p>
+<p>For users in the UK and EEA, we are the <em>data controller</em> for the
+limited personal data described in section 3.</p>
+
+<h2>2. No account, ever</h2>
+<p>UNTEPP does not ask you to register, sign in, or provide a name, email
+address, or phone number. There is nothing to log into. We therefore hold no
+directory of users and cannot connect app activity to your identity.</p>
+
+<h2>3. What the app collects, and where it goes</h2>
+
+<h3>3.1 Stays on your device — always</h3>
+<p>The following never leaves your phone. It is written to a private database
+inside the app's own storage, which other apps cannot read:</p>
+<ul>
+  <li><strong>App usage history</strong> — which apps you opened, when, and for
+  how long, read through Android's Usage Access permission.</li>
+  <li><strong>Your settings and rules</strong> — time limits, focus sessions,
+  bedtime windows, reminders, goals and exclusions.</li>
+  <li><strong>Your progress</strong> — streaks, badges, and the daily and weekly
+  figures the app derives from the above.</li>
+</ul>
+<p>We have no ability to retrieve any of this. There is no server it could be
+retrieved to.</p>
+
+<h3>3.2 The Accessibility Service</h3>
+<p>To hold you to a limit at the moment you open an app, UNTEPP uses an Android
+Accessibility Service. It is worth being precise about what that does, because
+the permission sounds broader than the use:</p>
+<ul>
+  <li>It reads <strong>only the package name</strong> of the app that has just
+  come to the foreground — for example <code>com.example.social</code>.</li>
+  <li>It does <strong>not</strong> read, record, or transmit screen contents,
+  text you type, passwords, messages, or anything shown in any app. The service
+  is configured without the ability to retrieve window content.</li>
+  <li>The package name is compared against your own rules on the device and then
+  discarded. It is not logged and not sent anywhere.</li>
+</ul>
+
+<h3>3.3 Leaves your device</h3>
+<table>
+  <tr><th>What</th><th>Who processes it</th><th>Why</th></tr>
+  <tr>
+    <td><strong>Anonymous product analytics</strong> — that a focus session
+    started or ended, a limit was created, the paywall was shown, a purchase
+    started, succeeded, failed or was cancelled, onboarding finished, a
+    permission was granted, an intervention was shown or overridden. Plus the
+    device model, OS version, country, and an app-instance identifier assigned
+    by Google.</td>
+    <td>Google (Firebase Analytics)</td>
+    <td>To see which features are used and where people get stuck.</td>
+  </tr>
+  <tr>
+    <td><strong>Crash reports</strong> — the error, the stack trace, device
+    model, OS version, and app version at the time of a crash.</td>
+    <td>Google (Firebase Crashlytics)</td>
+    <td>To find and fix crashes.</td>
+  </tr>
+  <tr>
+    <td><strong>Purchase and subscription status</strong> — which plan was
+    bought, when it renews or lapses, and an anonymous identifier RevenueCat
+    generates for this installation.</td>
+    <td>RevenueCat, Inc. and Google Play</td>
+    <td>To unlock Premium and keep it unlocked across reinstalls.</td>
+  </tr>
+</table>
+
+<div class="callout">
+  <p><strong>Note what is not in that table.</strong> The names of the apps you
+  use, how long you use them, your limits, your streaks and your goals are not
+  sent to Google, to RevenueCat, or to us. Analytics events record that
+  something happened, never which of your apps it happened to.</p>
+</div>
+
+<h3>3.4 Payments</h3>
+<p>Purchases are handled entirely by <strong>Google Play</strong>. We never see
+or receive your card number, bank details, or billing address. RevenueCat
+receives the purchase receipt from Google in order to tell the app whether
+Premium is active.</p>
+
+<h2>4. Advertising identifier</h2>
+<p>Firebase Analytics may access the Android advertising ID on your device.
+UNTEPP shows no adverts, sells no data, and does not use this identifier for
+advertising or for cross-app tracking. You can reset or delete it at any time in
+<em>Settings → Google → Ads</em> on your device.</p>
+
+<h2>5. Legal basis (UK/EEA)</h2>
+<ul>
+  <li><strong>Contract</strong> — processing your subscription status, so the
+  app you paid for works.</li>
+  <li><strong>Legitimate interests</strong> — crash reporting and aggregate
+  product analytics, to keep the app working and improve it. We consider this
+  proportionate because the data is not tied to your identity and does not
+  include your usage history.</li>
+</ul>
+<p>Where consent is the applicable basis in your jurisdiction, you may withdraw
+it by uninstalling the app or by contacting us.</p>
+
+<h2>6. How long data is kept</h2>
+<ul>
+  <li><strong>On your device</strong> — until you delete it in the app or
+  uninstall UNTEPP. Uninstalling removes the local database entirely.</li>
+  <li><strong>Analytics and crash reports</strong> — retained by Google in line
+  with Firebase's retention settings, up to 14 months.</li>
+  <li><strong>Purchase records</strong> — retained by RevenueCat and Google Play
+  for as long as needed to honour your entitlement and to meet tax and
+  accounting obligations.</li>
+</ul>
+
+<h2>7. Your rights</h2>
+<p>Depending on where you live, you may have the right to access, correct,
+delete, restrict, or object to processing of your personal data, and to data
+portability. Because the app holds no account:</p>
+<ul>
+  <li><strong>Access and portability</strong> — everything the app knows about
+  your usage is already on your device and can be exported to a PDF from within
+  the app at any time.</li>
+  <li><strong>Deletion</strong> — uninstalling the app deletes the local data.
+  To request deletion of analytics or crash data, email us with the approximate
+  date and your device model; note that because these records are not linked to
+  your identity, we may be unable to locate them.</li>
+  <li><strong>Purchases</strong> — subscription records are managed through your
+  Google account; see <a href="https://play.google.com/store/account/subscriptions">Play subscriptions</a>.</li>
+</ul>
+<p>You may also complain to your local data protection authority.</p>
+
+<h2>8. Sharing</h2>
+<p>We do not sell your data, and we do not share it for advertising. Data is
+shared only with the processors named in section 3.3, and where we are legally
+required to disclose it.</p>
+
+<h2>9. International transfers</h2>
+<p>Google and RevenueCat process data on servers that may be located outside
+your country, including in the United States, under the safeguards those
+providers offer (such as Standard Contractual Clauses).</p>
+
+<h2>10. Children</h2>
+<p>UNTEPP is not directed at children under 13, and we do not knowingly collect
+data from them. If you believe a child has provided us data, contact us and we
+will delete it.</p>
+
+<h2>11. Changes</h2>
+<p>If this policy changes materially we will update the date at the top and, for
+significant changes, note it in the app. Continuing to use UNTEPP after a change
+means you accept the updated policy.</p>
+
+<h2>12. Contact</h2>
+<p><a href="mailto:REPLACE_CONTACT_EMAIL">REPLACE_CONTACT_EMAIL</a></p>
+
+<footer>
+  <p>UNTEPP · <a href="terms.html">Terms of Service</a></p>
+</footer>
+</div>
+</body>
+</html>

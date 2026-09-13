@@ -49,7 +49,7 @@
 <header>
   <div class="brand">UNTEPP</div>
   <h1>Privacy Policy</h1>
-  <p class="dates">Effective <strong>9 September 2026</strong> · Last updated <strong>9 September 2026</strong></p>
+  <p class="dates">Effective <strong>9 September 2026</strong> · Last updated <strong>13 September 2026</strong></p>
 </header>
 
 <p class="lede">UNTEPP is a digital wellbeing app for Android. It measures how you
@@ -99,12 +99,23 @@ Accessibility Service. It is worth being precise about what that does, because
 the permission sounds broader than the use:</p>
 <ul>
   <li>It reads <strong>only the package name</strong> of the app that has just
-  come to the foreground — for example <code>com.example.social</code>.</li>
+  come to the foreground — for example <code>com.example.social</code> — and
+  the <strong>type of window</strong> that opened (its class name, such as the
+  name of an app screen, the keyboard, or the notification shade). The window
+  type is used only to tell an app actually opening apart from a keyboard or
+  system panel appearing over it.</li>
   <li>It does <strong>not</strong> read, record, or transmit screen contents,
   text you type, passwords, messages, or anything shown in any app. The service
   is configured without the ability to retrieve window content.</li>
-  <li>The package name is compared against your own rules on the device and then
-  discarded. It is not logged and not sent anywhere.</li>
+  <li>The package name and window type are compared against your own rules on
+  the device and then discarded. They are not logged and not sent anywhere.</li>
+  <li>The service takes <strong>one action</strong>: when an app covered by a
+  limit, focus session or schedule you set comes to the front, it presses
+  <strong>Back</strong> and shows UNTEPP's pause screen over that app. It takes
+  no other action on your device and changes no settings.</li>
+  <li>You are asked for explicit consent inside the app before being taken to
+  Android's Accessibility settings, and you can turn the service off at any
+  time in Settings &gt; Accessibility.</li>
 </ul>
 
 <h3>3.3 Leaves your device</h3>
